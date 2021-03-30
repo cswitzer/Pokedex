@@ -65,3 +65,46 @@ h1 {
   margin: 15px 0 7px;
   letter-spacing: 1px;
 }
+
+div.gen-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px 15px;
+  width: 55vw;
+}
+
+/*The actual buttons in the separate divs need to be separated as well*/
+.gen-button-cont {
+  min-width: 25%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center
+}
+
+.gen-button {
+  background-color: #6096AA;
+  border-radius: 5px;
+  color:#F1E5D8;
+  text-align: center;
+  padding: 20px 25px;
+  width: 90%;
+}
+
+@media (max-width: 1000px) {
+  div.gen-buttons {
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  .gen-button {
+    width: 100%;
+    padding: 15px 20px;
+  }
+
+  .gen-button-cont {
+    min-width: 90%;
+    margin: 5px auto;
+  }
+}

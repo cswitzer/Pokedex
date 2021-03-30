@@ -19,6 +19,17 @@ const colors = {
     ice: '##9EE4D9'
 }
 
+let generations = [
+    {firstIndex:1, secondInd:151},
+    {firstIndex:152, secondInd:251},
+    {firstIndex:252, secondInd:386},
+    {firstIndex:387, secondInd:493},
+    {firstIndex:494, secondInd:649},
+    {firstIndex:650, secondInd:721},
+    {firstIndex:722, secondInd:809},
+    {firstIndex:810, secondInd:898}
+]
+
 const main_types = Object.keys(colors);
 
 // promises are great for async tasks that may take a while in the background
@@ -96,5 +107,7 @@ const createPokemonCard = (pokemon) => {
     // add the pokemon card to the pokemon container
     poke_container.appendChild(pokemonElement);
 }
+
+
 
 fetchPokemon();
